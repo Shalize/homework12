@@ -1,7 +1,8 @@
 import pyshark
 import pandas as pd
+import matplotlib.pyplot as plt
 
-cap = pyshark.FileCapture('/Users/marii/Downloads/dhcp.pcapng')
+cap = pyshark.FileCapture('/Users/marii/Downloads/exercise.pcap', display_filter='dns')
 
 packets_data = []
 
